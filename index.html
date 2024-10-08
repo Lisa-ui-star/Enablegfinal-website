@@ -22,7 +22,7 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             max-width: 800px;
             text-align: center;
-            margin-top: 20px;
+            margin: 20px; /* Add margin for smaller screens */
         }
         h1 {
             color: #333;
@@ -39,18 +39,31 @@
         a:hover {
             text-decoration: underline;
         }
-        /* Adding styles for the logo */
+        /* Adjusted styles for the logo */
         .logo {
             width: 200px; /* Adjust the width of the logo */
-            margin-bottom: 20px; /* Add some space between the logo and the title */
+            margin-bottom: 10px; /* Reduced space between the logo and the title */
+        }
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            p {
+                font-size: 16px;
+            }
         }
     </style>
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Enable G is a non-profit organization that empowers individuals through upskilling, offering personal and business development opportunities.">
+    <meta name="keywords" content="Enable G, upskilling, non-profit, personal development, career growth">
+    <meta name="author" content="Enable G">
 </head>
 <body>
 
     <div class="container">
         <!-- Adjust the path to your logo -->
-        <img src="image1.png" alt="Enable G Logo" class="logo">
+        <img src="image1.png" alt="Enable G Non-Profit Logo" class="logo">
         
         <h1>Empowering Lives Through UpSkilling</h1>
         
@@ -62,7 +75,7 @@
         
         <p>The heart of Enable G’s vision is to create local support communities. After receiving support from Enable G, we encourage “graduates” to give back by sharing what they’ve learned with others in their community.</p>
         
-        <p>For more information or to get involved, please contact us at info@enableg.com.</p>
+        <p>For more information or to get involved, please contact us at <a href="mailto:info@enableg.com">info@enableg.com</a>.</p>
         
         <p><strong>David Hay</strong><br>Founder & Chairman<br>Manchester, England<br><a href="http://enableg.com" target="_blank">enableg.com</a></p>
         <p>Website Coming Soon...</p> 
