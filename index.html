@@ -12,35 +12,36 @@
         <div class="max-w-4xl mx-auto flex justify-between items-center px-6">
             <div class="flex items-center space-x-4">
                 <img src="Enable_Growth.png" alt="Enable G Logo" class="h-10">
-                
+                <h1 class="text-2xl font-bold text-[#96e077]">Enable G</h1>
             </div>
-            <button id="menu-btn" class="md:hidden text-green-600 focus:outline-none">
+            <button id="menu-btn" class="md:hidden text-[#96e077] focus:outline-none">
                 ☰
             </button>
             <ul id="menu" class="hidden md:flex space-x-6">
-                <li><a href="#home" class="text-gray-700 hover:text-green-600">Home</a></li>
-                <li><a href="#about" class="text-gray-700 hover:text-green-600">About Us</a></li>
-                <li><a href="#mission" class="text-gray-700 hover:text-green-600">Mission</a></li>
-                <li><a href="#contact" class="text-gray-700 hover:text-green-600">Contact Us</a></li>
+                <li><a href="#home" class="text-gray-700 hover:text-[#96e077]">Home</a></li>
+                <li><a href="#about" class="text-gray-700 hover:text-[#96e077]">About Us</a></li>
+                <li><a href="#mission" class="text-gray-700 hover:text-[#96e077]">Mission</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-[#96e077]">Contact Us</a></li>
             </ul>
         </div>
         <ul id="mobile-menu" class="hidden md:hidden flex flex-col items-center space-y-4 py-4 bg-white shadow-md">
-            <li><a href="#home" class="text-gray-700 hover:text-green-600">Home</a></li>
-            <li><a href="#about" class="text-gray-700 hover:text-green-600">About Us</a></li>
-            <li><a href="#mission" class="text-gray-700 hover:text-green-600">Mission</a></li>
-            <li><a href="#contact" class="text-gray-700 hover:text-green-600">Contact Us</a></li>
+            <li><a href="#home" class="text-gray-700 hover:text-[#96e077]">Home</a></li>
+            <li><a href="#about" class="text-gray-700 hover:text-[#96e077]">About Us</a></li>
+            <li><a href="#mission" class="text-gray-700 hover:text-[#96e077]">Mission</a></li>
+            <li><a href="#contact" class="text-gray-700 hover:text-[#96e077]">Contact Us</a></li>
         </ul>
     </nav>
     
     <div class="max-w-4xl mx-auto px-6 py-12">
         <!-- Header -->
         <header id="home" class="text-center">
-            <h1 class="text-4xl font-bold text-green-600">Enable G</h1>
+            <h1 class="text-4xl font-bold text-[#96e077]">Enable G</h1>
             <p class="text-lg mt-2">Empowering Lives Through UpSkilling</p>
         </header>
         
         <!-- About Section -->
         <section id="about" class="mt-10 text-center">
+            <h2 class="text-2xl font-semibold">About Us</h2>
             <p class="text-lg leading-relaxed">
                 Enable G is a non-profit organization dedicated to equipping individuals with personal and business skills to transform their lives. Founded by <strong>David Hay</strong> in 2021 after his retirement as a businessman and entrepreneur, Enable G began in <strong>Cape Town, South Africa</strong>, and has since expanded to <strong>Bali and across South and Central America</strong>.
             </p>
@@ -56,22 +57,37 @@
         
         <!-- Contact Section -->
         <section id="contact" class="mt-10 text-center bg-white shadow-lg rounded-lg p-6">
-            <h2 class="text-2xl font-semibold text-green-600">Get Involved</h2>
+            <h2 class="text-2xl font-semibold text-[#96e077]">Get Involved</h2>
             <p class="mt-2 text-lg">If you're interested in joining our mission or learning more, we'd love to hear from you.</p>
             <div class="mt-4">
-                <p class="font-semibold">📍 David Hay</p>
+                <p class="font-semibold"> David Hay</p>
                 <p>Founder & Chairman</p>
                 <p>Manchester, England</p>
             </div>
             <div class="mt-4">
-                <p class="font-semibold">🌍 Website Coming Soon</p>
-                <p>📩 <a href="#" class="text-green-500 hover:underline">enableg.com</a></p>
+                <p class="font-semibold"> Website Coming Soon</p>
+                <p> <a href="#" class="text-[#96e077] hover:underline">enableg.com</a></p>
             </div>
             <div class="mt-6">
-                <a href="mailto:info@enableg.com" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">Contact Us</a>
+                <a href="mailto:info@enableg.com" class="bg-[#96e077] text-white px-6 py-3 rounded-lg shadow hover:bg-[#96e077] transition">Contact Us</a>
             </div>
         </section>
     </div>
+    
+    <!-- Footer -->
+    <footer class="bg-[#96e077] text-white text-center py-6 mt-10">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-xl font-semibold">Quick Links</h2>
+            <ul class="flex justify-center space-x-6 mt-2">
+                <li><a href="#home" class="hover:underline">Home</a></li>
+                <li><a href="#about" class="hover:underline">About Us</a></li>
+                <li><a href="#mission" class="hover:underline">Mission</a></li>
+                <li><a href="#contact" class="hover:underline">Contact Us</a></li>
+            </ul>
+            <p class="mt-4">&copy; 2025 Enable G. All Rights Reserved.</p>
+            <p>Designed with  by Enable G Team</p>
+        </div>
+    </footer>
     
     <script>
         const menuBtn = document.getElementById('menu-btn');
@@ -83,6 +99,5 @@
     </script>
 </body>
 </html>
-
 
 
