@@ -8,16 +8,16 @@
 </head>
 <body class="bg-gray-100 text-gray-900">
     <!-- Navigation Menu -->
-    <nav class="bg-white shadow-md py-4">
-        <div class="max-w-4xl mx-auto flex justify-between items-center px-6">
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center px-6">
             <div class="flex items-center space-x-4">
-                <img src="Enable_Growth.png" alt="Enable G Logo" class="h-10">
-               
+                <img src="Enable_Growth.png" alt="Enable G Logo" class="h-12">
+                
             </div>
-            <button id="menu-btn" class="md:hidden text-[#96e077] focus:outline-none">
+            <button id="menu-btn" class="md:hidden text-[#96e077] focus:outline-none text-2xl">
                 ☰
             </button>
-            <ul id="menu" class="hidden md:flex space-x-6">
+            <ul id="menu" class="hidden md:flex space-x-6 text-lg font-semibold">
                 <li><a href="#home" class="text-gray-700 hover:text-[#96e077]">Home</a></li>
                 <li><a href="#about" class="text-gray-700 hover:text-[#96e077]">About Us</a></li>
                 <li><a href="#mission" class="text-gray-700 hover:text-[#96e077]">Mission</a></li>
@@ -32,51 +32,53 @@
         </ul>
     </nav>
     
-    <div class="max-w-4xl mx-auto px-6 py-12">
+    <div class="max-w-5xl mx-auto px-6 py-12">
         <!-- Header -->
-        <header id="home" class="text-center">
-            <h1 class="text-4xl font-bold text-[#96e077]">Enable G</h1>
-            <p class="text-lg mt-2">Empowering Lives Through UpSkilling</p>
+        <header id="home" class="text-center py-12 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('/mnt/data/pexels-akilmazumder-1072824.jpg');">
+            <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+                <h1 class="text-5xl font-bold text-white">Enable G</h1>
+                <p class="text-xl text-white mt-2">Empowering Lives Through UpSkilling</p>
+            </div>
         </header>
         
         <!-- About Section -->
-        <section id="about" class="mt-10 text-center">
-            <h2 class="text-2xl font-semibold">About Us</h2>
-            <p class="text-lg leading-relaxed">
+        <section id="about" class="mt-10 text-center bg-white shadow-lg p-6 rounded-lg">
+            <h2 class="text-3xl font-semibold text-[#96e077]">About Us</h2>
+            <p class="text-lg leading-relaxed mt-4">
                 Enable G is a non-profit organization dedicated to equipping individuals with personal and business skills to transform their lives. Founded by <strong>David Hay</strong> in 2021 after his retirement as a businessman and entrepreneur, Enable G began in <strong>Cape Town, South Africa</strong>, and has since expanded to <strong>Bali and across South and Central America</strong>.
             </p>
         </section>
         
         <!-- Mission Section -->
-        <section id="mission" class="mt-8 text-center">
-            <h2 class="text-2xl font-semibold">Our Mission</h2>
-            <p class="mt-2 text-lg">
+        <section id="mission" class="mt-10 text-center bg-gray-200 shadow-lg p-6 rounded-lg">
+            <h2 class="text-3xl font-semibold text-[#96e077]">Our Mission</h2>
+            <p class="mt-4 text-lg">
                 Our mission is to <strong>empower individuals through skill development</strong>, providing the guidance and resources needed for <strong>personal and professional growth</strong>. We believe in building <strong>local support communities</strong> where individuals who receive support can give back by sharing their knowledge and skills with others.
             </p>
         </section>
         
         <!-- Contact Section -->
         <section id="contact" class="mt-10 text-center bg-white shadow-lg rounded-lg p-6">
-            <h2 class="text-2xl font-semibold text-[#96e077]">Get Involved</h2>
-            <p class="mt-2 text-lg">If you're interested in joining our mission or learning more, we'd love to hear from you.</p>
-            <div class="mt-4">
-                <p class="font-semibold"> David Hay</p>
+            <h2 class="text-3xl font-semibold text-[#96e077]">Get Involved</h2>
+            <p class="mt-4 text-lg">If you're interested in joining our mission or learning more, we'd love to hear from you.</p>
+            <div class="mt-6">
+                <p class="font-semibold">David Hay</p>
                 <p>Founder & Chairman</p>
                 <p>Manchester, England</p>
             </div>
             <div class="mt-4">
-                <p class="font-semibold"> Website Coming Soon</p>
-                <p> <a href="#" class="text-[#96e077] hover:underline">enableg.com</a></p>
+                <p class="font-semibold">Website Coming Soon</p>
+                <p><a href="#" class="text-[#96e077] hover:underline">enableg.com</a></p>
             </div>
             <div class="mt-6">
-                <a href="mailto:info@enableg.com" class="bg-[#96e077] text-white px-6 py-3 rounded-lg shadow hover:bg-[#96e077] transition">Contact Us</a>
+                <a href="mailto:info@enableg.com" class="bg-[#96e077] text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">Contact Us</a>
             </div>
         </section>
     </div>
     
     <!-- Footer -->
     <footer class="bg-[#96e077] text-white text-center py-6 mt-10">
-        <div class="max-w-4xl mx-auto px-6">
+        <div class="max-w-5xl mx-auto px-6">
             <h2 class="text-xl font-semibold">Quick Links</h2>
             <ul class="flex justify-center space-x-6 mt-2">
                 <li><a href="#home" class="hover:underline">Home</a></li>
@@ -85,7 +87,7 @@
                 <li><a href="#contact" class="hover:underline">Contact Us</a></li>
             </ul>
             <p class="mt-4">&copy; 2025 Enable G. All Rights Reserved.</p>
-            
+            <p>Designed by Enable G Team</p>
         </div>
     </footer>
     
