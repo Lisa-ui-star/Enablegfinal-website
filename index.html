@@ -14,15 +14,13 @@
   </head>
   <body class="font-['Inter'] text-[#1F2937] bg-gradient-to-br from-white to-gray-100" data-llama-id="7" style="cursor: default;">
     <!-- Header / Navigation -->
-   <!-- Header / Navigation -->
-<header class="sticky top-0 z-50 bg-white shadow" data-llama-id="8">
+<!-- Header / Navigation -->
+<header class="sticky top-0 z-50 bg-white shadow">
   <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <!-- Logo -->
-    <div class="text-2xl font-bold text-[#1E40AF]">
-      Enable G
+    <div class="flex items-center space-x-4">
+      <img src="/path/to/logo.png" alt="Enable G Logo" class="w-12 h-12">
+      <div class="text-2xl font-bold text-[#1E40AF]">Enable G</div>
     </div>
-
-    <!-- Desktop Navigation -->
     <nav class="hidden md:flex space-x-8">
       <a href="#home" class="hover:text-[#0D9488] transition">Home</a>
       <a href="#about" class="hover:text-[#0D9488] transition">About</a>
@@ -30,15 +28,11 @@
       <a href="#contact" class="hover:text-[#0D9488] transition">Contact</a>
       <a href="#faqs" class="hover:text-[#0D9488] transition">FAQs</a>
     </nav>
-
-    <!-- Mobile Menu Button -->
-    <div class="md:hidden">
-      <button class="text-2xl focus:outline-none" onclick="toggleMenu()">☰</button>
-    </div>
+    <button class="md:hidden text-2xl" onclick="toggleMenu()">
+      ☰
+    </button>
   </div>
-
-  <!-- Mobile Navigation -->
-  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 transition duration-300">
+  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
     <a href="#home" class="block py-2 hover:text-[#0D9488]">Home</a>
     <a href="#about" class="block py-2 hover:text-[#0D9488]">About</a>
     <a href="#programs" class="block py-2 hover:text-[#0D9488]">Programs</a>
@@ -46,14 +40,6 @@
     <a href="#faqs" class="block py-2 hover:text-[#0D9488]">FAQs</a>
   </div>
 </header>
-
-<!-- JavaScript to Toggle Mobile Menu -->
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('hidden');
-  }
-</script>
 
     <!-- Hero Section -->
     <section id="home" class="relative bg-gradient-to-br from-[#1E40AF] to-[#6B21A8] text-white py-32" data-llama-id="27">
