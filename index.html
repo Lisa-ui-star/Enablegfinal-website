@@ -1,108 +1,353 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enable G - Empowering Lives</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 text-gray-900">
-    <!-- Navigation Menu -->
-    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto flex justify-between items-center px-6">
-            <div class="flex items-center space-x-4">
-                <img src="Enable_Growth.png" alt="Enable G Logo" class="h-12">
-                
-            </div>
-            <button id="menu-btn" class="md:hidden text-[#96e077] focus:outline-none text-2xl">
-                ☰
-            </button>
-            <ul id="menu" class="hidden md:flex space-x-6 text-lg font-semibold">
-                <li><a href="#home" class="text-gray-700 hover:text-[#96e077]">Home</a></li>
-                <li><a href="#about" class="text-gray-700 hover:text-[#96e077]">About Us</a></li>
-                <li><a href="#mission" class="text-gray-700 hover:text-[#96e077]">Mission</a></li>
-                <li><a href="#contact" class="text-gray-700 hover:text-[#96e077]">Contact Us</a></li>
-            </ul>
-        </div>
-        <ul id="mobile-menu" class="hidden md:hidden flex flex-col items-center space-y-4 py-4 bg-white shadow-md">
-            <li><a href="#home" class="text-gray-700 hover:text-[#96e077]">Home</a></li>
-            <li><a href="#about" class="text-gray-700 hover:text-[#96e077]">About Us</a></li>
-            <li><a href="#mission" class="text-gray-700 hover:text-[#96e077]">Mission</a></li>
-            <li><a href="#contact" class="text-gray-700 hover:text-[#96e077]">Contact Us</a></li>
-        </ul>
-    </nav>
-    
-    <div class="max-w-5xl mx-auto px-6 py-12">
-        <!-- Header -->
-        <header id="home" class="text-center py-12 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('/images/pexels-akilmazumder-1072824.jpg');">
-            <div class="bg-black bg-opacity-50 p-8 rounded-lg">
-                <h1 class="text-5xl font-bold text-white">Enable G</h1>
-                <p class="text-xl text-white mt-2">Empowering Lives Through UpSkilling</p>
-            </div>
-        </header>
-        
-        <!-- About Section -->
-        <section id="about" class="mt-10 text-center bg-white shadow-lg p-6 rounded-lg">
-            <h2 class="text-3xl font-semibold text-[#96e077]">About Us</h2>
-            <p class="text-lg leading-relaxed mt-4">
-                Enable G is a non-profit organization dedicated to equipping individuals with personal and business skills to transform their lives. Founded by <strong>David Hay</strong> in 2021 after his retirement as a businessman and entrepreneur, Enable G began in <strong>Cape Town, South Africa</strong>, and has since expanded to <strong>Bali and across South and Central America</strong>.
-            </p>
-        </section>
-        
-        <!-- Mission Section -->
-        <section id="mission" class="mt-10 text-center bg-gray-200 shadow-lg p-6 rounded-lg">
-            <h2 class="text-3xl font-semibold text-[#96e077]">Our Mission</h2>
-            <p class="mt-4 text-lg">
-                Our mission is to <strong>empower individuals through skill development</strong>, providing the guidance and resources needed for <strong>personal and professional growth</strong>. We believe in building <strong>local support communities</strong> where individuals who receive support can give back by sharing their knowledge and skills with others.
-            </p>
-        </section>
-        
-        <!-- Contact Section -->
-        <section id="contact" class="mt-10 text-center bg-white shadow-lg rounded-lg p-6">
-            <h2 class="text-3xl font-semibold text-[#96e077]">Get Involved</h2>
-            <p class="mt-4 text-lg">If you're interested in joining our mission or learning more, we'd love to hear from you.</p>
-            <div class="mt-6">
-                <p class="font-semibold">David Hay</p>
-                <p>Founder & Chairman</p>
-                <p>Manchester, England</p>
-            </div>
-            <div class="mt-4">
-                <p class="font-semibold">Website Coming Soon</p>
-                <p><a href="#" class="text-[#96e077] hover:underline">enableg.com</a></p>
-            </div>
-            <div class="mt-6">
-                <a href="mailto:info@enableg.com" class="bg-[#96e077] text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">Contact Us</a>
-            </div>
-        </section>
-    </div>
-    
-    <!-- Footer -->
-    <footer class="bg-[#96e077] text-white text-center py-6 mt-10">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-xl font-semibold">Quick Links</h2>
-            <ul class="flex justify-center space-x-6 mt-2">
-                <li><a href="#home" class="hover:underline">Home</a></li>
-                <li><a href="#about" class="hover:underline">About Us</a></li>
-                <li><a href="#mission" class="hover:underline">Mission</a></li>
-                <li><a href="#contact" class="hover:underline">Contact Us</a></li>
-            </ul>
-            <p class="mt-4">&copy; 2025 Enable G. All Rights Reserved.</p>
-            <p>Designed by Enable G Team</p>
-        </div>
-    </footer>
-    
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+<!DOCTYPE html><html lang="en"><head data-llama-id="0">
+    <meta charset="utf-8" data-llama-id="1">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" data-llama-id="2">
+    <title data-llama-id="3">Enable G - Empowering Lives</title>
+    <script src="https://cdn.tailwindcss.com" data-llama-id="4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" data-llama-id="5">
+    <script data-llama-id="6">
+      // Mobile menu toggle
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
     </script>
-</body>
-</html>
+  </head>
+  <body class="font-['Inter'] text-[#1F2937] bg-gradient-to-br from-white to-gray-100" data-llama-id="7" style="cursor: default;">
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow" data-llama-id="8">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center" data-llama-id="9">
+        <div class="text-2xl font-bold text-[#1E40AF]" data-llama-id="10"><br data-llama-id="11"></div>
+        <nav class="hidden md:flex space-x-8" data-llama-id="12">
+          <a href="#home" class="hover:text-[#0D9488] transition" data-llama-id="13">Home</a>
+          <a href="#about" class="hover:text-[#0D9488] transition" data-llama-id="14">About</a>
+          <a href="#programs" class="hover:text-[#0D9488] transition" data-llama-id="15">Programs</a>
+          <a href="#contact" class="hover:text-[#0D9488] transition" data-llama-id="16">Contact</a>
+          <a href="#faqs" class="hover:text-[#0D9488] transition" data-llama-id="17">FAQs</a>
+        </nav>
+        <button class="md:hidden text-2xl" onclick="toggleMenu()" data-llama-id="18">
+          ☰
+        </button>
+      <br data-llama-id="19"></div>
+      <div id="mobile-menu" class="md:hidden hidden px-6 pb-4" data-llama-id="20">
+        <a href="#home" class="block py-2 hover:text-[#0D9488]" data-llama-id="21">Home</a>
+        <a href="#about" class="block py-2 hover:text-[#0D9488]" data-llama-id="22">About</a>
+        <a href="#programs" class="block py-2 hover:text-[#0D9488]" data-llama-id="23">Programs</a>
+        <a href="#contact" class="block py-2 hover:text-[#0D9488]" data-llama-id="24">Contact</a>
+        <a href="#faqs" class="block py-2 hover:text-[#0D9488]" data-llama-id="25">FAQs</a>
+      </div>
+    <img src="data:image/jpeg;base64,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PPPPPPPPPPPPPPPPL/PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP/ADzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz/zzzzzzzyfbzwvbzyLXzyUjzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz/wA8888888k+38u88899M899d888808840888888888o408884888888888040888888888/88888888f7585988Q+w8Y+8888U8888U888888888o8U888o88888888g888I08888888/8APPPPPPLnPdvvfzZXvZ9DvntPPFKPPPPKNKPPPDKPKPBHPPKPPBDGPPOHLLDDPPPPPPPPP/PPPPPPErff/bO0fTf574LGtvPFPPPFLPONHOPONPKPNPKPKPDOOPNPOPFOPLHPPPPPPPP/ADzzzzzyjf693z5b/W2eRf7TzzxTgwxzzzxywDzTTyjxzSjyjzyxzzzyjSyxzxTzzzzzzz/zzzzzzzF/+Tzz/ezzfJxf/DzzxTzzzxTzzzyzyxzyjxxyzyzzCzgzzzzTwxzxTzzzzzzz/wA888888q8Sooozplq8Zv8AAf8AzzwjzzzhDhTizzzQSDijyhzjyCzTTjzzzyzzxRzzzzzzzz/zzzzzzzWNK8jKgU2ziOzVOXzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz/wA8888888888u888888us8888888888888888888888888888888888888888888888888/888888888888888888888888888888888888888888888888888888888888888888888/8APPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP/PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP/ADzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzyvzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzyvzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzyvzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzyP//EAC0RAAEEAQIFBQABBAMAAAAAAAIAAQMEEQUSEyIxMkIQMFBSYCMgMzSSYWJy/9oACAECAQE/AMususususususususususususususususususususususususususususususususususususususususususususususususususususususususususususususususususususum/DN+Gb8M34Zvwzfhh6/hh6+zLNHCG8yUGo1Zi2ifN6yzRwjuMlDqNaaTYJ+s08UA7jJQahVnLaB83rLPHCO4yUGoVpy2AfN8gPX2dcIswt4oS2vuFUpimrAb+mrzkdnZ4io3ITYhQPmMM+muEXFjZCRCe4VVk4sAH6arOUlkx8QULkMoOKHtb48evs6uEL18mXP4KGI5pAAO5VoeDAEfpq9MmPjN2qgER2QaQ+X11gIniFyLmUMJzSbAUEXChAPq3pq1Qgm4zdpLTQhOyHEP5AevsWrkdaPL9ys2ZLEm80BEBbhVC2NmL/sKd2Zald48mwO0fTT9Tx/FN/urd+KtH9iU9iSaTeZqMyjLeKpWxsxM/kiIRHc61C6VmTA9gemn6p0im/3+PHr7GpRSzX9gK5SGrXDP90lEO+QBJAU9GytQ1NjhAIvLvRVyCAJC81Dt4gb+1XdNkg5w5gQQzWDAA5ldpx1YwZ+8lCG+QA+yhkmo2uZajqTTDw4u1S1iihAz81XGMpgE+1W9PmrFuHmBU/8AGh/8fHD19howYiNg5lrE2+zt+iZS1o7tQD8+GqWmySTfyhyitZMeKEQ+PpSk41UHdRwxR9gMK1WbfbIfohLabErVMblcJB78KhppFJvmDlFavJussH0Q8rquYzVwJ/JkACA4b44evsEW0XdTycScz+yliki2bvNaNLvrbPr6XJOLamJSxSRbNy0WbMZRqQ2CMydSHxJTdSxSRFg1pMm+oDfVO+GVmTi2TNSxSRlg1os26Ag+vx49fY1GXhVDVSHjWABaxXHggbeC0SXbOYfZWpOHXMv+FWhK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" class="max-w-full my-4 w-248 h-88" style="width: 248px; height: 86.9553px;" data-llama-id="26"></header>
 
-</body>
-</html>
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-br from-[#1E40AF] to-[#6B21A8] text-white py-32" data-llama-id="27">
+      <div class="container mx-auto px-6 relative z-10" data-llama-id="28">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 text-center" data-llama-id="29">Enabling Growth<br data-llama-id="30">Empowering Lives.<br data-llama-id="31"></h1>
+        <p class="text-xl md:text-2xl text-center mb-8 max-w-3xl mx-auto" data-llama-id="32">
+          Enable G is a free, accessible online program that develops personal skills, advances your career or allows you to connect with a global community.
+        </p>
+        <div class="flex justify-center" data-llama-id="33">
+          <a href="#about" class="bg-[#0D9488] hover:bg-teal-700 transition text-white font-semibold py-3 px-8 rounded-full" data-llama-id="34">
+            Learn More
+          </a>
+        </div>
+      </div>
+      <div class="absolute inset-0 opacity-20 bg-[url('https://llamapress-ai-image-uploads.s3.us-west-2.amazonaws.com/hero-1-outdoor-pond-beautiful-trees-sky-landscape-dimensions.jpg')] bg-cover bg-center" data-llama-id="35"></div>
+    </section>
+
+    <!-- Empower Your Future Section -->
+    <section class="py-20" data-llama-id="36">
+      <div class="container mx-auto px-6 text-center" data-llama-id="37">
+        <h2 class="text-4xl font-bold mb-4" data-llama-id="38">Empower Your Future.</h2>
+        <p class="text-lg mb-12" data-llama-id="39">
+          Enable G provides high-quality programs without any fees, ensuring accessibility for everyone, everywhere.
+        </p>
+      </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section id="programs" class="py-20 bg-white" data-llama-id="40">
+      <div class="container mx-auto px-6" data-llama-id="41">
+        <div class="grid md:grid-cols-4 gap-8" data-llama-id="42">
+          <div class="p-6 border rounded-lg hover:shadow-xl transition duration-300" data-llama-id="43">
+            <h3 class="text-2xl font-bold mb-3" data-llama-id="44">Personal Growth</h3>
+            <p data-llama-id="45">
+              Learn how to achieve balance, strengthen finances, and improve relationships through free online workshops.
+            </p>
+          </div>
+          <div class="p-6 border rounded-lg hover:shadow-xl transition duration-300" data-llama-id="46">
+            <h3 class="text-2xl font-bold mb-3" data-llama-id="47">Career Development</h3>
+            <p data-llama-id="48">
+              Master business skills, improve English proficiency, and gain the tools to start or grow a business with zero cost.
+            </p>
+          </div>
+          <div class="p-6 border rounded-lg hover:shadow-xl transition duration-300" data-llama-id="49">
+            <h3 class="text-2xl font-bold mb-3" data-llama-id="50">Global Connection</h3>
+            <p data-llama-id="51">
+              Engage with people from around the world, broaden your perspectives, and build a global network — all for free.
+            </p>
+          </div>
+          <div class="p-6 border rounded-lg hover:shadow-xl transition duration-300" data-llama-id="52">
+            <h3 class="text-2xl font-bold mb-3" data-llama-id="53">Community Building</h3>
+            <p data-llama-id="54">
+              Take what you’ve learned and give back to your local community by sharing your knowledge and skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-gray-50 to-white" data-llama-id="55">
+      <div class="container mx-auto px-6" data-llama-id="56">
+        <div class="md:flex md:items-center" data-llama-id="57">
+          <div class="md:w-1/2 mb-8 md:mb-0" data-llama-id="58">
+            <h2 class="text-4xl font-bold mb-4" data-llama-id="59">Empowering Lives Through UpSkilling.</h2>
+            <p class="mb-4" data-llama-id="60">
+              Enable G, founded in 2021 by David Hay, is a non-profit empowering individuals through personal and professional development. Originating in Cape Town, it has expanded to Bali and South/Central America.
+            </p>
+            <p class="mb-4" data-llama-id="61">
+              The organization focuses on life skills, career growth, English proficiency, and business training, with a special emphasis on young adults. Graduates are encouraged to give back by sharing their knowledge within their communities, fostering local support networks.
+            </p>
+            <p data-llama-id="62">
+              Enable G’s mission is to create global impact through skill-building, cultural exchange, and community empowerment.
+            </p>
+          </div>
+          <div class="md:w-1/2" data-llama-id="63">
+            <img src="https://llamapress-ai-image-uploads.s3.us-west-2.amazonaws.com/business-planning-computer-coffee-desk-square-dimensions.jpg" alt="Empowering Lives" class="rounded-lg shadow-lg" data-llama-id="64">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-20" data-llama-id="65">
+      <div class="container mx-auto px-6 text-center" data-llama-id="66">
+        <blockquote class="text-2xl italic font-semibold mb-6" data-llama-id="67">"I couldn’t believe the programs were free! I’ve gained skills that have completely transformed my life, and now I’m helping others in my community."</blockquote>
+        <p class="font-bold text-xl" data-llama-id="68">Maria R</p>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 bg-[#F3F4F6]" data-llama-id="69">
+      <div class="container mx-auto px-6 text-center" data-llama-id="70">
+        <h2 class="text-3xl font-bold mb-4" data-llama-id="71">Stay Updated with Enable G</h2>
+        <p class="text-lg mb-8" data-llama-id="72">Join our community and receive the latest updates and resources directly to your inbox.</p>
+        <form class="max-w-xl mx-auto" data-llama-id="73">
+          <div class="flex flex-col md:flex-row" data-llama-id="74">
+            <input type="email" placeholder="Enter your email" class="p-4 border border-gray-300 rounded-l-md md:rounded-none md:rounded-l-md w-full focus:outline-none" data-llama-id="75">
+            <button type="submit" class="bg-[#0D9488] hover:bg-teal-700 text-white font-semibold px-8 py-4 rounded-r-md md:rounded-none md:rounded-r-md mt-4 md:mt-0" data-llama-id="76">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="py-20 bg-gradient-to-r from-[#1E40AF] to-[#6B21A8] text-white" data-llama-id="77">
+      <div class="container mx-auto px-6 text-center" data-llama-id="78">
+        <h2 class="text-4xl font-bold mb-6" data-llama-id="79">Join Us in Making a Difference</h2>
+        <p class="text-lg mb-8" data-llama-id="80">
+          Your support can change lives today!
+        </p>
+        <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6" data-llama-id="81">
+          <a href="#" class="bg-[#0D9488] hover:bg-teal-700 transition py-3 px-8 rounded-full font-semibold" data-llama-id="82">
+            Donate
+          </a>
+          <a href="#" class="bg-white text-[#1E40AF] hover:bg-gray-200 transition py-3 px-8 rounded-full font-semibold" data-llama-id="83">
+            Join
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20" data-llama-id="84">
+      <div class="container mx-auto px-6" data-llama-id="85">
+        <h2 class="text-4xl font-bold text-center mb-6" data-llama-id="86">Contact Us.</h2>
+        <p class="text-center text-lg mb-12" data-llama-id="87">
+          Reach out to us if you have any questions about our Enable G program. We'll do our best to help you in any way we can.
+        </p>
+        <div class="md:flex md:justify-between" data-llama-id="88">
+          <div class="md:w-1/2 mb-8 md:mb-0" data-llama-id="89">
+            <form class="space-y-6" data-llama-id="90">
+              <div data-llama-id="91">
+                <label class="block text-lg font-medium mb-2" data-llama-id="92">Name</label>
+                <input type="text" placeholder="Your name" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none" data-llama-id="93">
+              </div>
+              <div data-llama-id="94">
+                <label class="block text-lg font-medium mb-2" data-llama-id="95">Email Address</label>
+                <input type="email" placeholder="Your email" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none" data-llama-id="96">
+              </div>
+              <div data-llama-id="97">
+                <label class="block text-lg font-medium mb-2" data-llama-id="98">Message (Optional)</label>
+                <textarea placeholder="Your message" rows="4" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none" data-llama-id="99"></textarea>
+              </div>
+              <button type="submit" class="w-full bg-[#0D9488] hover:bg-teal-700 transition text-white font-semibold py-4 rounded-md" data-llama-id="100">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="md:w-1/2 md:pl-12" data-llama-id="101">
+            <div class="mb-6" data-llama-id="102">
+              <h3 class="text-2xl font-bold mb-2" data-llama-id="103">Location</h3>
+              <p data-llama-id="104">South Africa</p>
+            </div>
+            <div class="mb-6" data-llama-id="105">
+              <h3 class="text-2xl font-bold mb-2" data-llama-id="106">Phone Number</h3>
+              <p data-llama-id="107">061 162 2139</p>
+            </div>
+            <div data-llama-id="108">
+              <h3 class="text-2xl font-bold mb-2" data-llama-id="109">Hours Of Operation</h3>
+              <p data-llama-id="110">24/7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="py-20 bg-gray-50" data-llama-id="111">
+      <div class="container mx-auto px-6" data-llama-id="112">
+        <h2 class="text-4xl font-bold text-center mb-6" data-llama-id="113">FAQs</h2>
+        <div class="space-y-6 max-w-3xl mx-auto" data-llama-id="114">
+          <div data-llama-id="115">
+            <h3 class="font-bold text-xl" data-llama-id="116">1. What is Enable G?</h3>
+            <p class="ml-4" data-llama-id="117">Enable G is a non-profit organization dedicated to empowering individuals through personal and professional skill development. We offer guidance, resources, and training to improve lives and foster career growth at no cost.</p>
+          </div>
+          <div data-llama-id="118">
+            <h3 class="font-bold text-xl" data-llama-id="119">2. Where is Enable G located?</h3>
+            <p class="ml-4" data-llama-id="120">Enable G is a non-profit organization dedicated to empowering individuals through personal and professional skill development. We offer guidance, resources, and training to improve lives and foster career growth.</p>
+          </div>
+          <div data-llama-id="121">
+            <h3 class="font-bold text-xl" data-llama-id="122">3. Who can benefit from Enable G’s programs?</h3>
+            <p class="ml-4" data-llama-id="123">Everyone! Our programs are designed to offer guidance and training to improve personal skills, career development and more.</p>
+          </div>
+          <div data-llama-id="124">
+            <h3 class="font-bold text-xl" data-llama-id="125">4. What kind of support does Enable G provide?</h3>
+            <p class="ml-4" data-llama-id="126">We help individuals improve life balance, relationships, finances, English proficiency, and business skills like marketing and sales.</p>
+          </div>
+          <div data-llama-id="127">
+            <h3 class="font-bold text-xl" data-llama-id="128">5. How can I get involved with Enable G?</h3>
+            <p class="ml-4" data-llama-id="129">You can join as a participant to develop your skills or as a volunteer to support our mission. Graduates are encouraged to give back by sharing their learning with their communities.</p>
+          </div>
+          <div data-llama-id="130">
+            <h3 class="font-bold text-xl" data-llama-id="131">6. How does Enable G support local communities?</h3>
+            <p class="ml-4" data-llama-id="132">We foster local support networks by encouraging program graduates to share their skills and knowledge, creating a cycle of growth and empowerment within their communities.</p>
+          </div>
+          <div data-llama-id="133">
+            <h3 class="font-bold text-xl" data-llama-id="134">7. How can I donate to Enable G?</h3>
+            <p class="ml-4" data-llama-id="135">You can support our mission by donating through our website. Every contribution helps us reach more individuals and expand our impact globally.</p>
+          </div>
+          <div data-llama-id="136">
+            <h3 class="font-bold text-xl" data-llama-id="137">8. How can I contact Enable G?</h3>
+            <p class="ml-4" data-llama-id="138">Visit our Contact Us page or email us directly for more information about our programs, volunteering, or donations.</p>
+          </div>
+          <div data-llama-id="139">
+            <h3 class="font-bold text-xl" data-llama-id="140">9. Is there a fee to participate in Enable G programs?</h3>
+            <p class="ml-4" data-llama-id="141">Most of our programs are offered at no cost to participants, thanks to donations and support from our community.</p>
+          </div>
+          <div data-llama-id="142">
+            <h3 class="font-bold text-xl" data-llama-id="143">10. How do I stay updated on Enable G’s activities?</h3>
+            <p class="ml-4" data-llama-id="144">Follow us on social media or subscribe to our newsletter for updates on programs, events, and success stories.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-300 py-12" data-llama-id="145">
+      <div class="container mx-auto px-6" data-llama-id="146">
+        <div class="grid md:grid-cols-4 gap-8" data-llama-id="147">
+          <div data-llama-id="148">
+            <h3 class="text-xl font-bold mb-4" data-llama-id="149">Quick Links</h3>
+            <ul class="space-y-2" data-llama-id="150">
+              <li data-llama-id="151"><a href="#about" class="hover:text-white transition" data-llama-id="152">About</a></li>
+              <li data-llama-id="153"><a href="#programs" class="hover:text-white transition" data-llama-id="154">Our Programs</a></li>
+              <li data-llama-id="155"><a href="#contact" class="hover:text-white transition" data-llama-id="156">Contact Us</a></li>
+              <li data-llama-id="157"><a href="#faqs" class="hover:text-white transition" data-llama-id="158">FAQs</a></li>
+            </ul>
+          </div>
+          <div data-llama-id="159">
+            <h3 class="text-xl font-bold mb-4" data-llama-id="160">Get Involved</h3>
+            <ul class="space-y-2" data-llama-id="161">
+              <li data-llama-id="162"><a href="#" class="hover:text-white transition" data-llama-id="163">Volunteer</a></li>
+              <li data-llama-id="164"><a href="#" class="hover:text-white transition" data-llama-id="165">Donate Us</a></li>
+              <li data-llama-id="166"><a href="#" class="hover:text-white transition" data-llama-id="167">Events Calendar</a></li>
+              <li data-llama-id="168"><a href="#" class="hover:text-white transition" data-llama-id="169">Success Stories</a></li>
+            </ul>
+          </div>
+          <div data-llama-id="170">
+            <h3 class="text-xl font-bold mb-4" data-llama-id="171">Legal</h3>
+            <ul class="space-y-2" data-llama-id="172">
+              <li data-llama-id="173"><a href="#terms" class="hover:text-white transition" data-llama-id="174">Terms &amp; Conditions</a></li>
+              <li data-llama-id="175"><a href="#privacy" class="hover:text-white transition" data-llama-id="176">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div data-llama-id="177">
+            <h3 class="text-xl font-bold mb-4" data-llama-id="178">Connect with Us</h3>
+            <ul class="space-y-2" data-llama-id="179">
+              <li data-llama-id="180">Email: info@enableg.org</li>
+              <li data-llama-id="181">Phone: 061 162 2139</li>
+              <li data-llama-id="182">Location: South Africa</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 text-center" data-llama-id="183">
+          <p class="text-sm" data-llama-id="184">© 2024 Enable G. Transforming Lives Together.</p>
+        </div>
+      </div>
+    </footer>
+  
+ <!-- This model is for viewing historical contents of the page and the prompts that changed it -->
+
+
+
+<!-- Side panel for the Llama Bot, includes the html and javascript for managing it -->
+
+
+    
+    
+      <!-- Email confirmation dialog -->
+          
+<!-- Timeline Overlay -->
+ <!-- Existing floating toolbar -->
+    
+
+    
+ 
+  
+<!-- Add this new div for the custom context menu -->
+
+<!-- Feedback Modal -->
+
+
+<!--Put your analytics code here for Google Analytics, Facebook Pixels, etc.-->
+  
+  
+  
+ <!-- This model is for viewing historical contents of the page and the prompts that changed it -->
+
+
+
+<!-- Side panel for the Llama Bot, includes the html and javascript for managing it -->
+
+
+    
+    
+          
+
+          <!-- Email confirmation dialog -->
+         <!-- Timeline Overlay -->
+
+  <!-- Existing floating toolbar -->
+    <!-- Add this new div for the custom context menu -->
+
+<!-- Feedback Modal -->
+
+<!--Put your analytics code here for Google Analytics, Facebook Pixels, etc.-->
+  
+</body></html>
+"absolute inset-0 opacity-20 bg-[url('https://llamapress-ai-image-uploads.s3.us-west-2.amazonaws.com/hero-1-outdoor-pond-beautiful-trees-sky-landscape-dimensions.jpg')] bg-cover bg-center" data-llama-id="35"></div>
+    </section>
 
 
