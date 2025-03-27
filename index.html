@@ -6,51 +6,78 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" data-llama-id="5">
    <!-- favicon -->
     <link rel="icon" href="favicon.png" type="image/png">
+    <!-- Header / Navigation -->
+<header class="sticky top-0 z-50 bg-white shadow">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex items-center space-x-4">
+      <div class="text-2xl font-bold text-[#1E40AF]">Enable G</div>
+    </div>
     
-   <!-- Mobile Menu Button -->
-<button id="menu-btn" class="md:hidden text-3xl focus:outline-none z-50 relative">
-  ☰
-</button>
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-8">
+      <a href="#home" class="hover:text-[#0D9488] transition">Home</a>
+      <a href="#about" class="hover:text-[#0D9488] transition">About</a>
+      <a href="#programs" class="hover:text-[#0D9488] transition">Programs</a>
+      <a href="#contact" class="hover:text-[#0D9488] transition">Contact</a>
+      <a href="#faqs" class="hover:text-[#0D9488] transition">FAQs</a>
+    </nav>
 
-<!-- Mobile Navigation -->
-<div id="mobile-menu" class="md:hidden fixed inset-0 bg-white px-6 py-4 transform -translate-y-full transition-transform duration-300 ease-in-out z-40">
-  <button id="close-menu" class="text-3xl absolute top-4 right-6 focus:outline-none">✖</button>
-  <div class="space-y-4 mt-8" id="mobile-menu-links">
-    <a href="#home" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Home</a>
-    <a href="#about" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">About</a>
-    <a href="#programs" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Programs</a>
-    <a href="#contact" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Contact</a>
-    <a href="#faqs" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">FAQs</a>
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-3xl focus:outline-none z-50 relative">
+      ☰
+    </button>
   </div>
-</div>
+  
+  <!-- Mobile Navigation -->
+  <div id="mobile-menu" class="md:hidden fixed inset-0 bg-white px-6 py-4 transform -translate-y-full transition-transform duration-300 ease-in-out z-40">
+    <!-- Logo & Close Button -->
+    <div class="flex justify-between items-center mb-8">
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-[#1E40AF]">Enable G</div>
+      <!-- Close Button -->
+      <button id="close-menu" class="text-3xl focus:outline-none">✖</button>
+    </div>
 
-<!-- JavaScript for Mobile Menu Toggle -->
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const closeMenuBtn = document.getElementById('close-menu');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const mobileMenuLinks = document.getElementById('mobile-menu-links');
+    <!-- Mobile Links -->
+    <div class="space-y-4 mt-4" id="mobile-menu-links">
+      <a href="#home" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Home</a>
+      <a href="#about" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">About</a>
+      <a href="#programs" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Programs</a>
+      <a href="#contact" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Contact</a>
+      <a href="#faqs" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">FAQs</a>
+    </div>
+  </div>
 
-  // Show Mobile Menu
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.remove('-translate-y-full');
-    mobileMenu.classList.add('translate-y-0');
-  });
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuLinks = document.getElementById('mobile-menu-links');
 
-  // Hide Mobile Menu
-  closeMenuBtn.addEventListener('click', () => {
-    mobileMenu.classList.remove('translate-y-0');
-    mobileMenu.classList.add('-translate-y-full');
-  });
+    // Show Mobile Menu
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('-translate-y-full');
+      mobileMenu.classList.add('translate-y-0');
+    });
 
-  // Close Mobile Menu When a Link is Clicked
-  mobileMenuLinks.addEventListener('click', (event) => {
-    if (event.target.tagName === 'A') {
+    // Hide Mobile Menu
+    closeMenuBtn.addEventListener('click', () => {
       mobileMenu.classList.remove('translate-y-0');
       mobileMenu.classList.add('-translate-y-full');
-    }
-  });
-</script>
+    });
+
+    // Close Mobile Menu When a Link is Clicked
+    mobileMenuLinks.addEventListener('click', (event) => {
+      if (event.target.tagName === 'A') {
+        mobileMenu.classList.remove('translate-y-0');
+        mobileMenu.classList.add('-translate-y-full');
+      }
+    });
+  </script>
+</header>
+
 </head>    
 
     <!-- Hero Section -->
