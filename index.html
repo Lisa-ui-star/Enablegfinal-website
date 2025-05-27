@@ -38,7 +38,7 @@
       <a href="#faqs" class="hover:text-[#0D9488] transition">FAQs</a>
     </nav>
 
- <!-- Button to open the mobile menu -->
+<!-- Button to open the mobile menu -->
 <button id="open-menu" class="md:hidden fixed top-4 right-4 z-50 text-3xl text-[#1E40AF]">☰</button>
 
 <!-- Mobile Navigation -->
@@ -59,56 +59,33 @@
   </div>
 </div>
 
-<!-- Toggle Script -->
+<!-- ✅ Single Clean Toggle Script -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const mobileMenu = document.getElementById("mobile-menu");
     const openBtn = document.getElementById("open-menu");
     const closeBtn = document.getElementById("close-menu");
+    const navLinksContainer = document.getElementById("mobile-menu-links");
 
-    openBtn?.addEventListener("click", () => {
-      mobileMenu?.classList.remove("-translate-y-full");
+    openBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("-translate-y-full");
+      mobileMenu.classList.add("translate-y-0");
     });
 
-    closeBtn?.addEventListener("click", () => {
-      mobileMenu?.classList.add("-translate-y-full");
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("translate-y-0");
+      mobileMenu.classList.add("-translate-y-full");
     });
 
-    // Optional: Close menu when a nav link is clicked
-    const navLinks = document.querySelectorAll("#mobile-menu-links a");
-    navLinks.forEach(link => {
-      link.addEventListener("click", () => {
-        mobileMenu?.classList.add("-translate-y-full");
-      });
+    navLinksContainer.addEventListener("click", (event) => {
+      if (event.target.tagName === "A") {
+        mobileMenu.classList.remove("translate-y-0");
+        mobileMenu.classList.add("-translate-y-full");
+      }
     });
   });
 </script>
 
-
-  <!-- JavaScript for Mobile Menu Toggle -->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const closeMenuBtn = document.getElementById('close-menu');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileMenuLinks = document.getElementById('mobile-menu-links');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.remove('-translate-y-full');
-      mobileMenu.classList.add('translate-y-0');
-    });
-
-    closeMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.remove('translate-y-0');
-      mobileMenu.classList.add('-translate-y-full');
-    });
-
-    mobileMenuLinks.addEventListener('click', (event) => {
-      if (event.target.tagName === 'A') {
-        mobileMenu.classList.remove('translate-y-0');
-        mobileMenu.classList.add('-translate-y-full');
-      }
-    });
-  </script>
 </header>
 
 
