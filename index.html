@@ -38,29 +38,52 @@
       <a href="#faqs" class="hover:text-[#0D9488] transition">FAQs</a>
     </nav>
 
-    <!-- Mobile Menu Button -->
-    <button id="menu-btn" class="md:hidden text-3xl focus:outline-none z-50 relative">
-      ☰
-    </button>
+ <!-- Button to open the mobile menu -->
+<button id="open-menu" class="md:hidden fixed top-4 right-4 z-50 text-3xl text-[#1E40AF]">☰</button>
+
+<!-- Mobile Navigation -->
+<div id="mobile-menu" class="md:hidden fixed inset-0 bg-white px-6 py-4 transform -translate-y-full transition-transform duration-300 ease-in-out z-40">
+  <!-- Logo & Close Button -->
+  <div class="flex justify-between items-center mb-8">
+    <div class="text-2xl font-bold text-[#1E40AF]">Enable G</div>
+    <button id="close-menu" class="text-3xl focus:outline-none">✖</button>
   </div>
 
-  <!-- Mobile Navigation -->
-  <div id="mobile-menu" class="md:hidden fixed inset-0 bg-white px-6 py-4 transform -translate-y-full transition-transform duration-300 ease-in-out z-40">
-    <!-- Logo & Close Button -->
-    <div class="flex justify-between items-center mb-8">
-      <div class="text-2xl font-bold text-[#1E40AF]">Enable G</div>
-      <button id="close-menu" class="text-3xl focus:outline-none">✖</button>
-    </div>
-    
-    <div class="space-y-4 mt-4" id="mobile-menu-links"> 
-      <a href="#home" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Home</a>
-      <a href="#about" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">About</a>
-      <a href="#programs" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Programs</a>
-      <a href="#resources" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Resources</a>
-      <a href="#contact" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Contact</a>
-      <a href="#faqs" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">FAQs</a>
-    </div>
+  <div class="space-y-4 mt-4" id="mobile-menu-links"> 
+    <a href="#home" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Home</a>
+    <a href="#about" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">About</a>
+    <a href="#programs" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Programs</a>
+    <a href="#resources" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Resources</a>
+    <a href="#contact" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">Contact</a>
+    <a href="#faqs" class="block py-2 text-lg text-[#1E40AF] hover:text-[#0D9488]">FAQs</a>
   </div>
+</div>
+
+<!-- Toggle Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenu = document.getElementById("mobile-menu");
+    const openBtn = document.getElementById("open-menu");
+    const closeBtn = document.getElementById("close-menu");
+
+    openBtn?.addEventListener("click", () => {
+      mobileMenu?.classList.remove("-translate-y-full");
+    });
+
+    closeBtn?.addEventListener("click", () => {
+      mobileMenu?.classList.add("-translate-y-full");
+    });
+
+    // Optional: Close menu when a nav link is clicked
+    const navLinks = document.querySelectorAll("#mobile-menu-links a");
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu?.classList.add("-translate-y-full");
+      });
+    });
+  });
+</script>
+
 
   <!-- JavaScript for Mobile Menu Toggle -->
   <script>
